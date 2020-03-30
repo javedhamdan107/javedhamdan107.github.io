@@ -1,29 +1,74 @@
 <html>
     <head>
         <title>portfolio</title>
+        <script src="https://kit.fontawesome.com/b5bfbc5833.js" crossorigin="anonymous"></script>
+        <style>
+          .center {
+  text-align: center;
+  color: darkgreen;
+}
+          
+          *{
+            text-align: center;
+          }
+          div {
+  background-color:mediumpurple;
+}
+body {
+  background-image: url("./src/jj.jpg");
+  background-repeat: no-repeat;
+  background-size: 1300px 900px;
+}
+          
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="background-color:bisque;">
-        <h1 style="color:darkgreen font-size=300%">Hello,World</h1>
-        <p style="color:darkslategrey font-size=170%">This is Javed</p>
-        <p>Welcome to my first website</p>
-        <p>I'm a <b>Computer Science </b>student at <b>CET</b></p>
+    <body style="background-color:lightslategrey;">
+        <h1 class="center" >Hello,World</h1>
+        <p style="color:darkslategrey; font-size:larger;background-color: tomato;">This is Javed</p>
+        <p style="background-color: darkred;">Welcome to my first website</p>
+        <p style="border:2px solid DodgerBlue; color: maroon;">I'm a <b>Computer Science </b>student at <b>CET</b></p>
+        <div>
         <p>CET<sub>CS</sub></p>
         <p>I was born on <em>10<sup>th</sup>Nov 2000</em>at <b>Kochi</b></p>
-        <p>I did my schooling at <em>YWCA English Medium School</em> and<em><del>Brilliant Pala </del></em> <em>SAPS</em></p>
+        <p>I did my schooling at <em>YWCA English Medium School</em> and <em><del>Brilliant Pala </del></em> <em>SAPS</em></p>
 
-
-        <a href="https://www.facebook.com/javed.hamdan.3">the link to my facebook profile is</a>
+        </div>
+        <a href="https://www.facebook.com/javed.hamdan.3"><i class="fab fa-facebook-square fa-3x"></i></a>
         <image src="./src/javed.jpg" width="300" height="200g"></image>
         <p>JavaScript can change the content of an HTML element:</p>
 
 <button type="button" onclick="myFunction()">Click Me!</button>
 
 <p id="demo">This is a demonstration.</p>
+<script type ="text/javascript">
+  function myFunction() { 
+    document.getElementById("demo").innerHTML = "Hello Mofos";
+  }
+    function light(sw) {
+    var pic;
+    if (sw == 0) {
+      pic = "./src/hai.jpg"
+    } else {
+      pic = "./src/hello.jpg"
+    }
+    document.getElementById("myImage").src=pic;
+   
+  }
+   
+  
+   
+  
+  </script>
 
-<script>
-function myFunction() { 
-  document.getElementById("demo").innerHTML = "Hello Mofos";
-}
-</script>
+
+
+<img id="myImage" src="./src/hello.jpg" width="100" height="180">
+<p>
+  <button type="button" onclick="light(1)">Light On</button>
+  <button type="button" onclick="light(0)">Light Off</button>
+  </p>
+ 
+
     </body>
 </html>
